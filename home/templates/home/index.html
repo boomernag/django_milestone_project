@@ -13,17 +13,17 @@
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-front text-black">
+                <h1 class="display-4 logo-front text-black text-center">
                     Bookings
                 </h1>
-                <div class="my-5">
-                    <h4>
-                        <button class="btn btn-black border border-black rounder-0" type="submit">
-                            <span class="icon">
-                                <i class="fas fa-search"></i>
-                            </span>
-                        </button>
-                    </h4>
+                {% for booking in bookings %}
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">(slottime for booking and number of bookings) / 8</h5>
+                        <p class="card-text">(day and date for booking)</p>
+                        <a href="#" class="btn btn-primary">Cancel</a>
+                    </div>
+                {% endfor %}
                 </div>
             </div>
         </div>
