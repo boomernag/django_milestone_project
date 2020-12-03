@@ -1,45 +1,227 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+![Landing Page](/static/img/landing_page.png)
+    This app is a booking app for gymsessions at a certain gym.
 
-Welcome USER_NAME,
+#### You can access the platform [Here](insert link)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## Table of Contents
 
-## Gitpod Reminders
+1. [**UX**](#ux)
+   - [**User Stories**](#user-stories)
+     - [**As a user of this platform, I will be able to:**](#as-a-user-of-this-platform-i-will-be-able-to)
+2. [**Design**](#design)
+   - [**Typography**](#typography)
+     - [**Colours**](#colours)
+     - [**Icons**](#icons)
+   - [**Wireframes**](#wireframes)
+3. [**Features**](#features)
+   - [**Existing Features**](#existing-features)
+     - [**Base**](#base)
+     - [**Challenges**](#challenges)
+     - [**Add a new challenge**](#add-a-new-challenge)
+     - [**Edit a challenge**](#update-a-challenge)
+     - [**Delete a challenge**](#delete-a-challenge)
+     - [**Error Page**](#error-page)
+   - [**Features Left to Implement**](#features-left-to-implement)
+4. [**Technologies Used**](#technologies-used)
+   - [**Tools**](#tools)
+   - [**Libraries**](#libraries)
+   - [**Languages**](#languages)
+5. [**Testing**](#testing)
+   - [**Tools used for testing**](#tools-used-for-testing)
+     - [**Validators**](#validators)
+     - [**Responsiveness**](#responsiveness)
+6. [**Deployment**](#deployment)
+   - [**Local Deployment**](#local-deployment)
+     - [**Instructions**](#instructions)
+   - [**Remote Deployment**](#remote-deployment)
+     - [**Instructions**](#instructions-1)
+7. [**Credits**](#credits)
+   - [**Content**](#content)
+   - [**Media**](#media)
+   - [**Images**](#images)
+   - [**Code**](#code)
+8. [**Acknowledgements**](#acknowledgements)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# UX
 
-`python3 -m http.server`
+## User Stories
 
-A blue button should appear to click: *Make Public*,
+### As a user of this platform, I will be able to:
+ 
+- Sign up to create an account
+- Add payment information and make payments
+- Login to the site
+- See my previous bookings
+- See my coming bookings
+- Cancel bookings
+- Make bookings
 
-Another blue button should appear to click: *Open Browser*.
+## Design
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+This project was developed with an idea of keeping it simple, keeping the bookings in focus.
 
-A blue button should appear to click: *Make Public*,
+### Typography
+- The body font used is **Roboto**. Good readability and working well on smaller screens.
+- The title of booking is a condensed version of **Roboto**. It keeps the feeling of simplicity while helping the tile be caught by the eye.
+- Page title is **Staaliche** which suits well with **Roboto** in my opinion and also fits as a font for the page title.
 
-Another blue button should appear to click: *Open Browser*.
+### Colours
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Color Scheme](/static/img/color_scheme.png)
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Icons
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Wireframes
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+These wireframes were designed with Balsamiq Mockups 4.0.21
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- Mobile displays ![Here](/user_stories/Mobile!.png)
+- Computer displays ![Here](/user_stories/Desktop!.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+# Features
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Existing Features
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Sign up
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+**Sign up**
+![Sign up](/static/img/sign_up.png)
 
---------
+### Log in
 
-Happy coding!
+**Log in**
+![Log in](/static/img/log_in.png)
+
+### Base
+
+**Landing page**
+![Landing Page](/static/img/landing_page.png)
+
+### Make booking
+
+![Make booking](/static/img/make_booking.png)
+
+**CRUD - CREATE**
+User makes a booking by choosing what time to book and confirming.
+
+### Active bookings
+
+![Active booking](/static/img/active_booking.png)
+
+**CRUD - READ**
+User can easily see which bookings that are active.
+
+### Previous booking
+
+![Previous booking](/static/img/previous_booking.png)
+
+**CRUD - READ**
+When a bookings designated time has past user will find the booking in booking history.
+
+### Delete Challenge
+
+![Cancel booking](/static/img/cancel_booking.png)
+
+**CRUD - DELETE**
+When clicking the cancel button the booking will be canceled.
+
+### Error Page
+
+## Features Left to Implement
+
+# Technologies Used
+
+## Tools
+
+## Libraries
+
+## Languages
+
+# Testing
+
+## Test Cases
+
+### Desktop
+
+#### Sign up
+
+
+![Sign up](/static/img/screenshots_desktop/signup(screenshot).png)
+
+#### Log in
+
+
+![Log in](/static/img/screenshots_desktop/login(screenshot).png)
+
+#### Home
+
+
+![Home](/static/img/screenshots_desktop/home(screenshot).png)
+
+#### Make booking
+
+
+![Make booking](/static/img/screenshots_desktop/make_booking(screenshot).png)
+
+#### Bookings
+
+
+![Bookings](/static/img/screenshots_desktop/bookings(screenshot).png)
+
+### Mobile
+
+#### Sign up page
+
+
+![Sign up](/static/img/screenshots_mobile/signup(screenshot).png)
+
+#### Log in
+
+
+![Log in](/static/img/screenshots_mobile/login(screenshot).png)
+
+#### Home
+
+
+![Home](/static/img/screenshots_mobile/home(screenshot).png)
+
+#### Make booking
+
+
+![Make booking](/static/img/screenshots_mobile/make_booking(screenshot).png)
+
+#### Bookings
+
+
+![Bookings](/static/img/screenshots_mobile/bookings(screenshot).png)
+
+## Faced and fixed issues
+
+### Tools used for testing
+
+#### Validators
+
+#### Responsiveness
+
+# Deployment
+
+## Local Deployment
+
+#### Instructions
+
+## Remote Deployment
+
+#### Instructions
+
+# Credits
+
+## Content
+
+## Media
+
+#### Images
+
+### Code
+
+## Acknowledgements
