@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
+    'profiles',
+    'make_booking',
 ]
 
 MIDDLEWARE = [
@@ -107,19 +109,12 @@ WSGI_APPLICATION = 'booking_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-"""
-
-DATABASES = {
-    'default': dj_database_url.parse('postgres://zzaljbpnfcotqq:9b9e071ea725e8aa73ada47df9e85b3b6c8ac5c258bf697403473d142236529c@ec2-54-247-107-109.eu-west-1.compute.amazonaws.com:5432/d778klnqvi6qfb')
-}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
