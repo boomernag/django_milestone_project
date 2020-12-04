@@ -16,14 +16,42 @@
                 <h1 class="display-4 logo-front text-black text-center">
                     Bookings
                 </h1>
-                {% for booking in bookings %}
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">(slottime for booking and number of bookings) / 8</h5>
-                        <p class="card-text">(day and date for booking)</p>
-                        <a href="#" class="btn btn-primary">Cancel</a>
+                <div class="container">
+                    <div class="row">
+                        <!-- constant new booking card-->
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Make new booking</h5>
+                                    <p class="card-text" style="text-center">Click here to make a new booking.</p>
+                                    <a href="#" class="btn btn-primary"><span><i class="fas fa-plus"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- if active booking cards-->
+                        <div class="col-sm-4">
+                            <div class="card active-booking">
+                                <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                    <p class="card-text"></p>
+                                    <a href="#" class="btn btn-primary d-flex justify-content-center">Cancel</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- if previous booking cards-->
+                        <div class="container">
+                        <hr>
+                        <h4 class="text-center">History</h4>
+                            <div class="col-sm-4">
+                                <div class="card previous-booking">
+                                    <div class="card-body">
+                                        <h5 class="card-title">time and number of slots</h5>
+                                        <p class="card-text d-flex justify-content-center"> date and day</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                {% endfor %}
                 </div>
             </div>
         </div>
