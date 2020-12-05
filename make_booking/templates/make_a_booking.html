@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row ">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-7 col-md-6 my-auto">
+                <h1 class="display-4 logo-front text-black text-center">
+                    Make a booking
+                </h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown link
+                            </a>
+
+                            <div class="weekdays dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="weekday dropdown-item" href="#">Monday</a>
+                            <a class="weekday dropdown-item" href="#">Tuesdayn</a>
+                            <a class="weekday dropdown-item" href="#">Wednesday</a>
+                            <a class="weekday dropdown-item" href="#">Thursday</a>
+                            <a class="weekday dropdown-item" href="#">Friday</a>
+                            <a class="weekday dropdown-item" href="#">Saturday</a>
+                            <a class="weekday dropdown-item" href="#">Sunday</a>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
